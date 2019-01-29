@@ -1,11 +1,35 @@
  %!TEX root = ../main.tex
 
 The paper will include following parts:
+\section{Introduction}
+
+With the exponential growth in the crypto space,
+
+%A number of firms operate with blockchain-based assets, liabilities, and/or transactions. In certain common circumstances, these firms will require their financial statements to be validated by a financial auditor. Annual audits are legally mandatory for publicly traded companies in most countries, and audits might also be required when a firm borrows from a bank or raises capital from investors. Auditing is a timely subject as, at the time of writing, major auditing firms are hesitating to provide certification to a wide range of businesses in the blockchain sector due to a perception of insurmountable business risk associated with these clients.  This creates friction for firms wanting to raise capital in traditional ways. 
+%
+%When assessing whether or not to take on a new client, auditors who lack experience in this sector will be unable to develop expectations of financial performance as a way of challenging financial statement assumptions. Due to the complex and rapidly changing technological environment, auditors are also unable to keep pace with the changes and develop the in-depth knowledge of their clients'  businesses required for performing an audit. Finally, auditors are wary of accepting clients that hold a significant amount of cryptoassets as this space is largely unregulated. A lack of third-party oversight puts an onus on the auditor, further increasing their risk exposure.  
+%
+%In this paper we explore why and provide a comprehensive overview of the challenges auditors perceive as novel, we form parallels to auditing approaches used today, and critically assess the extent to which these challenges are barriers. Altogether, we find that while this environment is new, the challenges presented are different incarnations of issues already addressed with traditional audit clients. Therefore, we conclude that many entities in this space are auditable, subject to certain caveats. 
+%
+%\paragraph{\textbf{Methodology.}} To ensure a comprehensive overview of the changes facing auditors, we first used structured brainstorming within our multidisciplinary research team, which includes expertise in both auditing and blockchain technologies. Once our preliminary list of challenges was established, we vetted our results through informal discussions with over a dozen individuals working in the field, including at the Big Four\footnote{The Big Four are the four biggest auditing firms in the world which includes, Ernst \& Young (EY), Deloitte \& Touche, KPMG and PricewaterhouseCoopers (PwC).} and mid-sized accounting firms, and used these interviews to augment our list. The contribution of this paper is to provide a comprehensive list of challenges, rather than determining the relative importance of each or any broader concepts across the industry---thus we did not find it necessary to apply qualitative data analysis (\eg grounded theory) to the interviews; instead, we simply extracted the challenges raised.
+%
+%\paragraph{\textbf{Relevance.}} Our work can be viewed as a case study of cryptographers working with an outside profession to address a real-world problem. The result is not a new protocol but a two-way knowledge transfer between professions. While displacing auditors is occasionally a target of cryptographers~\cite{dagher2015provisions,narula2018zkledger}, auditing itself is also occasionally studied directly~\cite{grigg2000financial} or indirectly~\cite{Swi97,BFS98} at venues like Financial Cryptography.
+
+
+
 \section{Philosophy of Cryptocurrency Ownership and Control}
+
+
+
+
+
 First say Bitcoin (and all other cryptocurrency) and custodianship are mutually exclusive. Talk about the philosophy of ownership of cryptocurrency in the crypto space.  Bitcoin holders believe that once they have the private key they have full ownership and control over those coins. 
 
 \section{Why do we need a Custodian}
 However, auditors do not accept this philosophy, in case of a financial audit, an auditor wants to audit and they need to be equipped with some tools/things to make sure cryptocurrency holders actually own the coins. That is the reason custodianship for cryptocurrencies is significant. In the real world this is so simple, Alice gives her Bitcoins to Bob, who is certifies by some trusted parties to act as a custodian, however, there is no such service in the crypto space. The other use-case is the law enforcement when they want to freeze some illegal cryptocurrencies (Look at the references and docs you prepared before )
+
+
+
 
 \section{Custodianship of Non-crypto Assets}
 There is an standard of what it means to be a custodian: SOC 1 (or 2 not sure yet)
@@ -53,6 +77,48 @@ My Own Words: If you (as a company) are hosting/processing information for your 
 
 
 % = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+\section{Useful Info for writing the paper}
+ related paper : 01825-RG-Audit-Considerations-Related-to-Cryptocurrency-July-2018-1.pdf : page 11-12: what is wallet and different types of wallet. PLUS page 16: identifying the risk of using wallets and private keys (what can go wrong)
+ \par
+Addressing ownership risk is difficult since ownership of a cryptocurrency
+is not readily apparent from a blockchain because of the anonymity of the
+transacting parties. The possession of a private key is a clear indication,
+at a specific point in time, of the ownership of the cryptocurrency that
+can be accessed by use of that key.
+
+\par
+related paper Auditing in the Crypto-Asset Sector : section Additional considerations where private keys are held by a third party custodian\par
+
+There is a related work talking about what is the custodian and blah blah
+\par what is SOC: User entities and organizations want reporting that provides assurance on
+controls over operations and compliance, rather than just on controls over
+financial reporting. The AICPA responded by creating a framework to enable a
+broader type of third party attestation reporting on controls at service
+organizations beyond merely financial reporting. This framework is the Service
+Organization Control (SOC) reporting framework.
+\par
+
+(My words):
+we need to understand the cryptocurrencies custodianship and how if affects the crypto-asset future landscape and market. 
+regulated crypto custody os needed.
+custodian service: ensures individual's held crypto-assets are not stolen.
+when you hold your cryptocurrencies in exchange or wallet, you could get hacked.
+There are quite a few questions around that that need to be solved: who will hold the crypto-assets? where is it going to be stored? what are the  security protocols? governments have strict policies for custodianship.
+ (not my word: regulated crypto custody would allow more institutional buyers, such as hedge funds and pensions, to invest in crypto(Bitcoin and Ether))
+custody: a custodian for institutional investors who want to hold crypto currencies.
+There are many institutions and individuals that want to invest in Bitcoin and cryptocurrencies but they do not feel safe about keeping their private key in a secure manner.
+It's important for users to have full control ver their cryptocurrencies
+If you hold your Bitcoins on the exchange, you're giving away the custodianship of your bitcoins to the exchange and they are the counter-party risk
+In the crypto space if you own the keys you own the coins, if you dont own the keys you dont own the coins -> misunderstanding of this concept leads to lost and hack
+Talk about Bitcoin hacks that have happened before and reason why? -> Because of these hacks people would like to avoid exchanges (that act like custodian) because they own the private key -> that's why we need a regulated custodian that is assessed and compatible with SOC (dont know the type yet) that apply good practices
+
+
+
+
+
+
+
 
 
 
