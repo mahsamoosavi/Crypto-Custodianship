@@ -1,9 +1,58 @@
  %!TEX root = ../main.tex
-
-The paper will include following parts:
 \section{Introduction}
-\textbf{Talk about the stablecoin in this paper too}
-With the exponential growth in the crypto space,
+
+\begin{enumerate}
+\item{Introduction to the Bitcoin and other cryptocurrencies, when they were introduces, how they got deployed, and what are the use-cases in today's financial sectors.}
+\item{Explain how a Bitcoin (or other cryptocurrencies) holder could store and trade their coins (Very short explanation, we'll dive into details while explaining ,,, in section ....).}
+\item{Draw attention to the issue of cryptocurrency ownership and custodianship.}
+\item{Explain the paper's contribution around the issue discussed before: ...}
+\end{enumerate}
+
+%\textbf{Talk about the stablecoin in this paper too}
+
+\section{Philosophy of Cryptocurrency Ownership and Control}
+
+\begin{enumerate}
+\item{In this section, we first say that Bitcoin (and all other cryptocurrencies) and custodianship are mutually exclusive.}
+\item{Next, we thoroughly talk about the philosophy of ownership of cryptocurrency in the crypto-space.  Bitcoin holders believe that once they have the private key they have full ownership and control over those coins, while this is not the case.}
+\end{enumerate}
+
+
+\section{Why Crypto Space Needs a Custodian Service?}
+
+In this section we provide a discussion that although Bitcoin holders believe holding the private key entitles them to the coin continually, auditors do not accept this philosophy. The reason is in case of a financial audit, where an auditor wants to audit and they need to be equipped with some tools to make sure cryptocurrency holders actually own the coins. That is the reason custodianship for cryptocurrencies is significant. In the real world this is so simple, Alice gives her Bitcoins to Bob, who is certified by some trusted parties to act as a custodian, however, there is no such service in the crypto space. The other use-case of a custodian service in a crypto space is when the law enforcement  want to freeze some illegal cryptocurrencies (\cite{Bitcoins81:online} is an example of such that we have to showcase in detail.) 
+
+
+\section{Custodianship of Non-crypto Assets}
+
+So far in the paper we have discussed the custodianship of cryptocurrencies. In this section, we take a look at what it means to be a \textit{custodian service} for non crypto-assets. In the finance world there is an standard of what it means to be a custodian called System and Organization Controls (SOC) reporting. There are 2 types of SOC reporting, which we have to explain and provide a detailed description. Next, we will explain what kind of this reporting is required for a company to act as a custodian and why. 
+
+\section{Custodianship of Crypto Assets} 
+
+We begin this section by providing a very small chart that simply shows the research gap around the custodianship of cryptocurrencies that need to be filled. As shown in~\ref{tab:motiv}, 
+
+cell 1,2,4: already exist.  cell 3 does not exist and that's why we see a research gap here to be filled.
+ You can have examples too: self custodianship of cryptocurrencies (cell 4): wallet, air-gap
+
+
+ \begin{table}[t]
+\centering
+\begin{tabular}{|c|c|c|}  
+\hline
+& \textbf{Custodianship} & \textbf{Self Custodianship}   \\ \hline
+\textbf{Currencies} & \shortstack{Custody Services \\ (Banks)} & Safety Boxes \\ \hline
+\textbf{Crypto-Currencies} & Wallets & \cellcolor{verylightgray}4 \\
+\hline
+\end{tabular}
+\caption{\footnotesize{Showcasing the research gap in the cell 4 which has to be filled.}
+\label{tab:motiv}}
+\end{table}
+
+
+
+
+
+
 
 %A number of firms operate with blockchain-based assets, liabilities, and/or transactions. In certain common circumstances, these firms will require their financial statements to be validated by a financial auditor. Annual audits are legally mandatory for publicly traded companies in most countries, and audits might also be required when a firm borrows from a bank or raises capital from investors. Auditing is a timely subject as, at the time of writing, major auditing firms are hesitating to provide certification to a wide range of businesses in the blockchain sector due to a perception of insurmountable business risk associated with these clients.  This creates friction for firms wanting to raise capital in traditional ways. 
 %
@@ -16,17 +65,6 @@ With the exponential growth in the crypto space,
 %\paragraph{\textbf{Relevance.}} Our work can be viewed as a case study of cryptographers working with an outside profession to address a real-world problem. The result is not a new protocol but a two-way knowledge transfer between professions. While displacing auditors is occasionally a target of cryptographers~\cite{dagher2015provisions,narula2018zkledger}, auditing itself is also occasionally studied directly~\cite{grigg2000financial} or indirectly~\cite{Swi97,BFS98} at venues like Financial Cryptography.
 
 
-
-\section{Philosophy of Cryptocurrency Ownership and Control}
-
-
-
-
-
-First say Bitcoin (and all other cryptocurrency) and custodianship are mutually exclusive. Talk about the philosophy of ownership of cryptocurrency in the crypto space.  Bitcoin holders believe that once they have the private key they have full ownership and control over those coins. 
-
-\section{Why do we need a Custodian}
-However, auditors do not accept this philosophy, in case of a financial audit, an auditor wants to audit and they need to be equipped with some tools/things to make sure cryptocurrency holders actually own the coins. That is the reason custodianship for cryptocurrencies is significant. In the real world this is so simple, Alice gives her Bitcoins to Bob, who is certifies by some trusted parties to act as a custodian, however, there is no such service in the crypto space. The other use-case is the law enforcement when they want to freeze some illegal cryptocurrencies (Look at the references and docs you prepared before )
 
 
 
@@ -60,21 +98,7 @@ In order for a firm to be able to serve as a custodianship service for currencie
 My Own Words: If you (as a company) are hosting/processing information for your clients that is not affecting the financial reports, you might be just generally concerned that if you're handling their information in a secure way, or will this information be available to the clients as it's been agreed upon in the contract, then you'll need a SOC 2 report/certification.  (a CPA firm that has auditors can provide yo with this certification)
 % = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
  
- \section{table} : cell 1,2,4: already exist.  cell 3 does not exist and that's why we see a research gap here to be filled.
- You can have examples too: self custodianship of cryptocurrencies (cell 4): wallet, air-gap
-
- \begin{table}[t]
-\centering
-\begin{tabular}{|c|c|c|}  
-\hline
-& \textbf{Custodianship} & \textbf{Self Custodianship}   \\ \hline
-\textbf{Currencies} & 1 & 2 \\ \hline
-\textbf{Crypto-Currencies} & 3 & 4 \\
-\hline
-\end{tabular}
-\caption{\footnotesize{}\label{tab:}}
-\end{table}
-
+ 
 
 % = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
